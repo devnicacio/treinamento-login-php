@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['id'])){
+        session_start();
+        header('Location: /login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,9 +21,16 @@
     <div class="circulo2"></div>
     <div class="circulo3"></div>
 
-    <div class="card-dashboard">
-        <div class="titulo"></div>
-        <p>Bem-vindo à sua dashboard!</p>
+    <div class="conteudo">
+        <div class="card-dashboard">
+            <div class="titulo"></div>
+            <p>Bem-vindo à sua dashboard!</p>
+        </div>
+        <div class="logout">
+            <form action="/logout" method="POST">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
