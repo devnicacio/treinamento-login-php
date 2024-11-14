@@ -99,6 +99,17 @@ p{
     justify-content: center;
 }
 
+.mensagem-erro{
+    display: flex;
+    justify-content: center;
+    padding: 3px 0px;
+}
+
+.mensagem-erro p{
+    font-size: 14px;
+    color: red;
+}
+
 .circulo1{
     position: absolute;
     width: 250px;
