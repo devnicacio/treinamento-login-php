@@ -1,12 +1,3 @@
-<?php
-    session_start();
-
-    if(!isset($_SESSION['id'])){
-        session_start();
-        header('Location: /login');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
